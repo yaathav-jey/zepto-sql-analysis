@@ -69,4 +69,19 @@ PostgreSQL, data exploration, data cleaning, data aggregation, business analysis
 
 ## Key Findings
 
-Results and business insights will be documented
+Analysis of the 3,732-record Zepto dataset produced the following findings:
+
+- **Data quality:** The source dataset contained no missing values across its nine columns. One record had both MRP and discounted selling price equal to zero and was removed during cleaning.
+- **Discount analysis:** The highest observed discount was 51%, offered on three Dukes Waffy wafer varieties.
+- **Stock availability:** The original dataset contained 3,279 in-stock records and 453 out-of-stock records.
+- **High-priced unavailable products:** Four products had an MRP above 300 (after price conversion) and were marked out of stock.
+- **Category discounts:** Fruits & Vegetables had the highest average discount percentage at 15.46%, followed by Meats, Fish & Eggs at 11.03%.
+- **Price-per-gram analysis:** Onion appeared among the lowest-cost products by weight, at approximately 0.02 per gram.
+- **Inventory analysis:** Cooking Essentials and Munchies each had an estimated inventory weight of 1,404,654 grams based on product weight and available quantity.
+
+### Business Takeaways
+
+The analysis demonstrates how SQL can help compare product discounts, identify unavailable high-priced items, evaluate relative product value, and summarize estimated inventory across categories.
+
+Estimated revenue and inventory weight are calculated from the available dataset fields and should not be interpreted as verified sales or physical inventory measurements.
+
